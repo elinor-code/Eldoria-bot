@@ -1,6 +1,6 @@
 # Privacy Policy — Eldoria
 
-**Effective Date:** July 24, 2026  
+**Effective Date:** July 24, 2026
 **Last Revised:** July 24, 2026
 
 ---
@@ -11,7 +11,7 @@
 
 **1.2** This Policy should be read in conjunction with the Eldoria Terms of Service ("Agreement"). By using the Service, you acknowledge that you have read and understood this Policy.
 
-**1.3** The Developer is committed to protecting your privacy and handling your data in an open, transparent, and responsible manner. This Policy explains your rights and choices regarding your personal information and how we protect it.
+**1.3** The Developer is committed to protecting your privacy and handling your data in an open, transparent, and responsible manner. This Policy explains your rights and choices regarding your personal information and how we safeguard it.
 
 **1.4** If you do not agree with the practices described in this Policy, you should not use the Service.
 
@@ -19,10 +19,10 @@
 
 ## 2. Scope of This Policy
 
-**2.1** This Policy applies exclusively to data collected and processed by the Eldoria Bot through its own systems and databases. It does not apply to:
+**2.1** This Policy applies exclusively to data collected and processed by the Eldoria Bot through its own systems. It does not apply to:
 
-   (a) Data collected by Discord, Inc. through its platform (governed by Discord's own [Privacy Policy](https://discord.com/privacy));  
-   (b) Data collected by third-party websites, services, or bots linked to or from the Service;  
+   (a) Data collected by Discord, Inc. through its platform (governed by Discord's own [Privacy Policy](https://discord.com/privacy));
+   (b) Data collected by third-party websites, services, or bots linked to or from the Service;
    (c) Data collected offline or through non-Discord channels, unless explicitly referenced herein.
 
 **2.2** The Developer does not control and is not responsible for the data collection practices of Discord or any third-party service. We encourage you to review Discord's Privacy Policy to understand how Discord handles your data.
@@ -33,7 +33,7 @@
 
 **3.1** For the purposes of applicable data protection legislation (including the EU General Data Protection Regulation ("GDPR"), the UK GDPR, the California Consumer Privacy Act ("CCPA"), and similar laws), the Developer, Eldoria Studio, is the data controller responsible for the personal data described in this Policy.
 
-**3.2** The Developer does not maintain a publicly registered office address. Data protection inquiries and exercise of rights may be directed through the contact channels specified in Section 20 of this Policy.
+**3.2** Data protection inquiries and exercise of rights may be directed through the contact channels specified in Section 20 of this Policy.
 
 ---
 
@@ -45,7 +45,7 @@ The Service collects several categories of information. The nature and extent of
 
 | Data Element | Description | Source | Required |
 |---|---|---|---|
-| Discord User ID | Your unique numerical Discord identifier (snowflake) | Automatically from Discord API | Yes |
+| Discord User ID | Your unique numerical Discord identifier | Automatically from Discord API | Yes |
 | Discord Guild ID | Identifier(s) for servers where you use the Bot | Automatically from Discord API | Yes |
 | Display Name | Your Discord display name at time of profile creation | Automatically from Discord API | Yes |
 
@@ -55,7 +55,7 @@ The Service collects several categories of information. The nature and extent of
 
 | Data Element | Description | Required |
 |---|---|---|
-| Selected Race | Your chosen in-game race (Human, Elf, Orc, Dwarf, Undead, Dragonkin) | Yes (at setup) |
+| Selected Race | Your chosen in-game race | Yes (at setup) |
 | Kingdom Name | Name of your in-game kingdom | Yes (at setup) |
 | Kingdom Level | Your kingdom's current level | Automatic |
 | Kingdom Experience | Experience points accumulated | Automatic |
@@ -68,41 +68,33 @@ The Service collects several categories of information. The nature and extent of
 
 | Data Element | Description |
 |---|---|
-| Gold | Primary in-game currency balance |
-| Crystal | Premium in-game currency balance |
-| Iron | Crafting and military resource balance |
-| Food | Sustenance and army resource balance |
-| Wood | Construction resource balance |
-| Mana | Magical resource balance |
-| Dark Essence | Rare magical resource balance |
-| Bank Gold | Gold deposited in the in-game bank |
-| Vault Gold | Gold stored in the in-game vault |
+| In-Game Currencies | Balances for Gold, Crystal, Iron, Food, Wood, Mana, and Dark Essence |
+| Bank and Vault Balances | Gold deposited in the in-game bank or vault |
 | Bank / Vault Status | Lock state, interest timestamps, and access flags |
 | Loan Records | Principal amount, outstanding balance, collateral, status, and repayment history |
 
 **Purpose:** To operate the in-game economy, track resource flows, prevent fraud, and maintain economy integrity.
 
-### 4.4 Complete Transaction Ledger
+### 4.4 Transaction Ledger
 
 | Data Element | Description |
 |---|---|
 | Transaction ID | Unique system-generated identifier for each transaction |
-| Transaction Type | Category of transaction (e.g., DAILY_CLAIM, MARKET_BUY, ARENA, LOAN_BORROW) |
+| Transaction Type | Category of transaction (e.g., daily claim, market purchase, arena reward) |
 | Resource | Which resource was affected |
-| Amount | Quantity gained or lost (signed integer) |
+| Amount | Quantity gained or lost |
 | Balance After | Account balance snapshot following the transaction |
-| Metadata | Optional additional context (JSON) for the transaction |
-| Idempotency Key | Unique key preventing duplicate transaction execution |
+| Additional Context | Optional contextual information associated with the transaction |
 | Timestamp | Date and time of the transaction |
 
-**Purpose:** To maintain a verifiable audit trail of all economic activity, support anti-cheat investigations, enable rollback operations, and ensure economy integrity.
+**Purpose:** To maintain a verifiable audit trail of all economic activity, support anti-cheat investigations, enable data restoration operations, and ensure economy integrity.
 
 ### 4.5 Kingdom Infrastructure Data
 
 | Data Element | Description |
 |---|---|
-| Building Types and Levels | Town Hall, Farm, Mine, Barracks, Wall, Market — and their current upgrade levels |
-| Army Composition | Number of Soldiers, Archers, Cavalry, and Mages in your army |
+| Building Types and Levels | Types of buildings in your kingdom and their current upgrade levels |
+| Army Composition | Composition and size of your military forces |
 | Last Collection Timestamp | When you last collected taxes and production |
 
 ### 4.6 Character Data
@@ -112,11 +104,10 @@ The Service collects several categories of information. The nature and extent of
 | Data Element | Description |
 |---|---|
 | Hero Name | Name given to the hero |
-| Hero Race | Race of the hero |
-| Hero Class | Class (Warrior, Mage, Archer, Rogue, Paladin, Necromancer) |
+| Hero Race and Class | Race and class designation of the hero |
 | Hero Level & XP | Current level and experience points |
-| Hero Stats | Power, Defense, Speed, Luck |
-| Hero Rarity | Rarity tier (Common, Uncommon, Rare, Epic, Legendary) |
+| Hero Stats | Combat statistics (power, defense, speed, luck) |
+| Hero Rarity | Rarity tier classification |
 | Equipped Item | Reference to currently equipped item |
 
 **Pets:**
@@ -124,11 +115,10 @@ The Service collects several categories of information. The nature and extent of
 | Data Element | Description |
 |---|---|
 | Pet Name | Name given to the pet |
-| Species | Pet species type |
-| Rarity | Rarity tier (Common through Mythic) |
+| Species and Rarity | Species type and rarity tier classification |
 | Level & XP | Current level and experience points |
 | Loyalty | Loyalty score |
-| Combat Bonuses | Attack and Defense bonus values |
+| Combat Bonuses | Attack and defense bonus values |
 | Skill | Pet's active skill |
 | Active Status | Whether the pet is currently active |
 
@@ -136,18 +126,18 @@ The Service collects several categories of information. The nature and extent of
 
 | Data Element | Description |
 |---|---|
-| Skill Names | Skills you have engaged with (e.g., fishing, mining, farming, hunting, excavating, treasure hunting, cooking, alchemy) |
+| Skill Names | Skills you have engaged with |
 | Skill Levels | Current level for each skill |
 | Skill XP | Experience points for each skill |
-| Skill Metadata | Additional skill-specific data (JSON) |
+| Skill Metadata | Additional skill-specific information |
 
 ### 4.8 Social and Competitive Data
 
 | Data Element | Description |
 |---|---|
-| Alliance Membership | Alliance you belong to, your role (Leader, Officer, Member), and donation history |
-| Alliance Creation | Whether you created an alliance (alliance name, tag, level, experience) |
-| Arena Matches | Match history including opponents, power levels, gold deltas, rating changes, and outcomes |
+| Alliance Membership | Alliance you belong to, your role, and donation history |
+| Alliance Creation | Whether you created an alliance (name, tag, level, experience) |
+| Arena Matches | Match history including opponents, power levels, resource deltas, rating changes, and outcomes |
 | Auction Activity | Items listed for sale, items bid on, prices, and transaction status |
 | Leaderboard Data | Derived from Game Progress (no additional data collected) |
 
@@ -168,10 +158,9 @@ The Service collects several categories of information. The nature and extent of
 |---|---|
 | Cooldown Records | Active cooldown timers and expiration timestamps per action |
 | Daily Claim Records | Record of daily reward claims and streak counters |
-| Command History | Record of commands executed (for anti-cheat analysis and debugging) |
+| Command History | Record of commands executed (for anti-cheat analysis and system debugging) |
 | Activity Timestamps | Last active time and session-related timestamps |
-| Account Version | Optimistic locking version counter (internal use) |
-| Deletion Timestamp | Soft-deletion marker for account/data removal requests |
+| Account Markers | Internal status fields used for account management and data removal requests |
 
 **Purpose:** To enforce game rules, prevent abuse, detect cheating and exploitation, support debugging, and facilitate account management.
 
@@ -190,24 +179,24 @@ The Service collects several categories of information. The nature and extent of
 
 **5.1 Service Provision.** Your data is used to provide, operate, and deliver the core functionality of the Service, including but not limited to:
 
-   (a) Creating and maintaining your Player Profile;  
-   (b) Processing game commands and interactions;  
-   (c) Managing your kingdom, economy, heroes, pets, alliances, and all Game Progress;  
-   (d) Enabling player-versus-player matchmaking and competitive rankings;  
+   (a) Creating and maintaining your Player Profile;
+   (b) Processing game commands and interactions;
+   (c) Managing your kingdom, economy, heroes, pets, alliances, and all Game Progress;
+   (d) Enabling player-versus-player matchmaking and competitive rankings;
    (e) Delivering notifications you have opted into.
 
 **5.2 Anti-Cheat and Integrity.** Your data is used to detect, prevent, and investigate cheating, exploitation, fraud, and abuse of the Service, including:
 
-   (a) Monitoring transaction patterns for anomalous behavior;  
-   (b) Enforcing cooldowns and rate limits;  
-   (c) Investigating reports of Exploit usage;  
-   (d) Supporting rollback and data restoration operations.
+   (a) Monitoring transaction patterns for anomalous behavior;
+   (b) Enforcing cooldowns and rate limits;
+   (c) Investigating reports of exploitative activity;
+   (d) Supporting data restoration operations.
 
 **5.3 Service Improvement.** Your data may be used in aggregated or anonymized form to:
 
-   (a) Analyze gameplay trends and player behavior;  
-   (b) Identify balance issues and improve game mechanics;  
-   (c) Optimize system performance and reliability;  
+   (a) Analyze gameplay trends and player behavior;
+   (b) Identify balance issues and improve game mechanics;
+   (c) Optimize system performance and reliability;
    (d) Develop new features and content.
 
 **5.4 Legal Compliance.** Your data may be processed to comply with applicable laws, regulations, legal processes, or enforceable governmental requests.
@@ -218,16 +207,13 @@ The Service collects several categories of information. The nature and extent of
 
 ## 6. How We Store Your Information
 
-**6.1 Storage Infrastructure.** Your data is stored on secure database servers hosted by the Developer's infrastructure providers. The Service utilizes:
-
-   (a) **PostgreSQL** — Primary relational database for persistent game state, profiles, economy records, and all structured data;  
-   (b) **Redis** — In-memory data store used for caching, session management, rate limiting, and real-time state tracking.
+**6.1 Storage Infrastructure.** Your data is stored on secure, industry-standard database infrastructure hosted by the Developer's infrastructure providers. The Service utilizes secure caching technologies for session management and performance optimization.
 
 **6.2 Geographic Location.** Your data is stored in data centers selected by the Developer's infrastructure providers. Data may be stored in jurisdictions other than your country of residence. By using the Service, you consent to the transfer and storage of your data in these locations.
 
-**6.3 Encryption.** Data is encrypted in transit using industry-standard TLS (Transport Layer Security) protocols. Data at rest is protected through database-level encryption and access controls.
+**6.3 Encryption.** Data is protected using industry-standard encryption in transit and encryption at rest. Data access is governed by strict access controls limiting access to authorized personnel only.
 
-**6.4 Backups.** The Developer maintains regular backups of the database to support disaster recovery and data integrity. Backups are stored securely and are subject to the same access controls as primary data stores.
+**6.4 Backups.** The Developer maintains regular backups to support disaster recovery and data integrity. Backups are retained only for the period reasonably necessary for disaster recovery and business continuity, and are subject to the same access controls as primary data stores.
 
 **6.5 Access Controls.** Access to production data is restricted to authorized personnel of the Developer who require such access for legitimate operational purposes. Access is governed by the principle of least privilege.
 
@@ -237,39 +223,37 @@ The Service collects several categories of information. The nature and extent of
 
 **7.1 Active Accounts.** Your data is retained for as long as your Player Profile remains active — that is, for as long as you continue to use the Service or until you request data deletion.
 
-**7.2 Inactive Accounts.** Player Profiles that have had no recorded activity for one hundred eighty (180) consecutive days may be flagged as inactive. Inactive profiles may be archived (moved to cold storage) or, after an additional one hundred eighty (180) days of continued inactivity, permanently deleted. The Developer will make reasonable efforts to notify you before permanent deletion, though prior notice is not guaranteed.
+**7.2 Inactive Accounts.** Player Profiles that have had no recorded activity for one hundred eighty (180) consecutive days may be flagged as inactive. Inactive profiles may be archived or, after an additional one hundred eighty (180) days of continued inactivity, permanently deleted. The Developer will make reasonable efforts to notify you before permanent deletion, though prior notice is not guaranteed.
 
 **7.3 Deleted Accounts.** When you request deletion of your account, or when an account is terminated, your personal data is permanently and irreversibly deleted within thirty (30) days, except:
 
-   (a) Data required to be retained under applicable law may be retained for the period mandated by such law;  
-   (b) Anonymized or aggregated data that can no longer be attributed to you may be retained indefinitely for analytics purposes;  
-   (c) Transaction ledger records required for economic integrity audits may be retained in anonymized form.
+   (a) Data required to be retained under applicable law may be retained for the period mandated by such law;
+   (b) Anonymized or aggregated data that can no longer be attributed to you may be retained indefinitely for analytics purposes;
+   (c) Transaction records required for economic integrity audits may be retained in anonymized form.
 
-**7.4 Transaction Logs.** Complete economy transaction logs (the Economy Ledger) are retained for the lifetime of the account to support anti-cheat investigations, audit trails, and rollback operations. Upon account deletion, ledger records are deleted along with other account data, unless retention is required by law.
-
-**7.5 Backup Retention.** Data contained in backups is retained for up to ninety (90) days before being overwritten. Backup deletion does not occur on a per-record basis; deleted account data present in backups will be irrecoverable once the relevant backup rotation overwrites it.
+**7.4 Transaction Logs.** Transaction records are retained for the lifetime of the account to support anti-cheat investigations, audit trails, and data restoration operations. Upon account deletion, transaction records are deleted along with other account data, unless retention is required by law.
 
 ---
 
 ## 8. Data Sharing and Disclosure
 
-**8.1 No Sale of Personal Data.** The Developer does **not** sell, rent, trade, or otherwise distribute your personal data to third parties for their marketing, advertising, or commercial purposes. This is an absolute commitment.
+**8.1 No Sale of Personal Data.** The Developer does **not** sell, rent, trade, or otherwise distribute your personal data to third parties for their marketing, advertising, or commercial purposes.
 
 **8.2 No Sharing for Advertising.** Your data is not shared with, sold to, or made available to data brokers, advertising networks, analytics companies, or any entity for the purpose of targeted advertising or profiling.
 
-**8.3 Service Providers.** The Developer may engage trusted third-party service providers ("Subprocessors") who process data on behalf of the Developer for limited operational purposes, such as:
+**8.3 Service Providers.** The Developer may engage trusted third-party service providers who process data on behalf of the Developer for limited operational purposes, such as:
 
-   (a) Cloud infrastructure and hosting providers (database and application hosting);  
-   (b) Logging and monitoring services (for system health and error diagnosis);  
+   (a) Cloud infrastructure and hosting providers (database and application hosting);
+   (b) Logging and monitoring services (for system health and error diagnosis);
    (c) Payment processors (if and when Premium Features are offered).
 
-All Subprocessors are bound by contractual obligations to protect your data to standards no less protective than this Policy. The Developer performs reasonable due diligence on Subprocessors before engagement.
+All service providers are bound by contractual obligations to protect your data to standards no less protective than this Policy. The Developer performs reasonable due diligence on service providers before engagement.
 
 **8.4 Legal Requirements.** The Developer may disclose your personal data if required to do so by law, or in good faith belief that such action is necessary to:
 
-   (a) Comply with a legal obligation, subpoena, court order, or government request;  
-   (b) Protect and defend the rights, property, or safety of the Developer, its Users, or the public;  
-   (c) Enforce the Terms of Service;  
+   (a) Comply with a legal obligation, subpoena, court order, or government request;
+   (b) Protect and defend the rights, property, or safety of the Developer, its Users, or the public;
+   (c) Enforce the Terms of Service;
    (d) Detect or prevent fraud, security vulnerabilities, or technical issues.
 
 **8.5 Business Transfers.** In the event of a merger, acquisition, reorganization, bankruptcy, dissolution, or sale of all or a portion of the Developer's assets, your data may be transferred as part of that transaction. In such an event, the Developer will make reasonable efforts to notify you before your data is transferred and becomes subject to a different privacy policy.
@@ -284,18 +268,18 @@ All Subprocessors are bound by contractual obligations to protect your data to s
 
 **9.1 Technical Measures.** The Developer implements industry-standard technical safeguards to protect your data, including but not limited to:
 
-   (a) **Encryption in Transit:** All data transmitted between your client, Discord's infrastructure, and the Service's servers is encrypted using TLS 1.2 or higher;  
-   (b) **Encryption at Rest:** Database storage employs encryption at rest;  
-   (c) **Access Controls:** Strict role-based access control (RBAC) limiting data access to authorized personnel;  
-   (d) **Authentication:** Secure authentication mechanisms for all administrative and operational access to data stores;  
-   (e) **Monitoring:** Automated monitoring and alerting for unauthorized access attempts, anomalies, and security events;  
-   (f) **Infrastructure Hardening:** Server and database configurations follow security best practices and are regularly patched.
+   (a) **Encryption in Transit:** Industry-standard encryption for all data transmitted between your client, Discord's infrastructure, and the Service's servers;
+   (b) **Encryption at Rest:** Data stored in our systems is encrypted at rest;
+   (c) **Access Controls:** Strict access controls limiting data access to authorized personnel;
+   (d) **Authentication:** Secure authentication mechanisms for all administrative and operational access;
+   (e) **Monitoring:** Automated monitoring and alerting for unauthorized access attempts, anomalies, and security events;
+   (f) **Infrastructure Hardening:** Systems follow security best practices and are regularly updated with security patches.
 
 **9.2 Organizational Measures.** The Developer implements appropriate organizational measures, including:
 
-   (a) Principle of least privilege for all data access;  
-   (b) Regular review of access permissions;  
-   (c) Security awareness and responsible handling practices;  
+   (a) Principle of least privilege for all data access;
+   (b) Regular review of access permissions;
+   (c) Security awareness and responsible handling practices;
    (d) Incident response procedures for data breach scenarios.
 
 **9.3 No Absolute Security.** While the Developer strives to use commercially reasonable means to protect your data, no method of electronic transmission, storage, or processing is 100% secure. The Developer cannot guarantee the absolute security of your data and is not liable for unauthorized access that occurs despite reasonable safeguards, except to the extent required by applicable law.
@@ -370,9 +354,9 @@ All Subprocessors are bound by contractual obligations to protect your data to s
 
 **13.1** The Service employs automated systems for gameplay mechanics, matchmaking, economy management, and anti-cheat enforcement. These systems process your data to:
 
-   (a) Calculate combat outcomes and resource production based on game rules;  
-   (b) Match players for competitive interactions based on ranking and power levels;  
-   (c) Detect and flag potentially exploitative or fraudulent behavior patterns;  
+   (a) Calculate combat outcomes and resource production based on game rules;
+   (b) Match players for competitive interactions based on ranking and power levels;
+   (c) Detect and flag potentially exploitative or fraudulent behavior patterns;
    (d) Enforce cooldowns, rate limits, and economic caps.
 
 **13.2** Anti-cheat decisions may result in automated restrictions on your account (e.g., transaction limits, cooldown extensions, or flagging for review). You have the right to contest any automated decision through the appeal process described in the Terms of Service (Section 25).
@@ -387,13 +371,13 @@ All Subprocessors are bound by contractual obligations to protect your data to s
 
 **14.2** The Developer does not collect:
 
-   (a) Real-world names, physical addresses, or postal addresses;  
-   (b) Email addresses (unless voluntarily provided for support);  
-   (c) Phone numbers;  
-   (d) Government-issued identification numbers;  
-   (e) Financial account information (bank accounts, credit cards);  
-   (f) Biometric data;  
-   (g) Precise geolocation data;  
+   (a) Real-world names, physical addresses, or postal addresses;
+   (b) Email addresses (unless voluntarily provided for support);
+   (c) Phone numbers;
+   (d) Government-issued identification numbers;
+   (e) Financial account information (bank accounts, credit cards);
+   (f) Biometric data;
+   (g) Precise geolocation data;
    (h) Health, racial, ethnic, or political data.
 
 **14.3** The primary personal data element collected is your Discord User ID — a numerical identifier that, while not inherently revealing your real-world identity, may be used by Discord or other services to identify you.
@@ -414,7 +398,7 @@ All Subprocessors are bound by contractual obligations to protect your data to s
 
 **16.1** Your data may be transferred to and processed in countries or jurisdictions outside of your country of residence. These countries may have data protection laws that differ from the laws of your jurisdiction.
 
-**16.2** By using the Service, you consent to the transfer, storage, and processing of your data in jurisdictions where the Developer, its Subprocessors, or their infrastructure providers operate.
+**16.2** By using the Service, you consent to the transfer, storage, and processing of your data in jurisdictions where the Developer, its service providers, or their infrastructure providers operate.
 
 **16.3** Where required by applicable law (e.g., EU Standard Contractual Clauses or equivalent transfer mechanisms), the Developer will ensure that appropriate safeguards are in place to protect your data during international transfers.
 
@@ -447,8 +431,8 @@ All Subprocessors are bound by contractual obligations to protect your data to s
 
 **19.2** Material changes to this Policy will be communicated through one or more of the following methods:
 
-   (a) Announcement in the official Eldoria Discord server;  
-   (b) In-bot notification upon your next interaction;  
+   (a) Announcement in the official Eldoria Discord server;
+   (b) In-bot notification upon your next interaction;
    (c) A prominent notice on the Service (if applicable web presence exists).
 
 **19.3** The "Last Revised" date at the top of this document will be updated to reflect the date of the most recent changes.
@@ -463,9 +447,9 @@ All Subprocessors are bound by contractual obligations to protect your data to s
 
 **20.1** For questions, concerns, requests, or complaints regarding this Policy or the Developer's data practices, you may contact the Developer through the following channels:
 
-   - **Service:** Eldoria Discord Bot (botzenki)  
-   - **Developer:** Eldoria Studio  
-   - **Primary Contact:** Official Eldoria Discord server — support ticket system  
+   - **Service:** Eldoria Discord Bot (botzenki)
+   - **Developer:** Eldoria Studio
+   - **Primary Contact:** Official Eldoria Discord server — support ticket system
    - **Direct Contact:** Discord (bot owner / administrator)
 
 **20.2** Data protection requests (access, rectification, deletion, portability, objection) should be directed through the channels above. Please clearly identify yourself by providing your Discord User ID and describing your request.
